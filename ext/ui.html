@@ -1,0 +1,236 @@
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+      body{
+        background-color: #333333;
+        color: white;
+        text-align: center;
+      }
+      header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin: 20px 10px 0px 10px;
+      }
+      #title{
+        font-size: 15px;
+      }
+      #logo{
+        width: 200px;
+        height: auto;
+      }
+      main{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+      }
+      #popup-ui{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: space-around;
+        height: 150px;
+        margin: 0px 0px 30px 0px;
+      }
+      button{
+        background-color: white;
+        color: #595959;
+        width: 180px;
+        font-weight: bold;
+      }
+      button:hover{
+        background-color: #333333;
+        color: white;
+        cursor: pointer;
+      }
+      .hidden{
+        display: none !important;
+      }
+      .loading{
+        opacity: 50% !important;
+        cursor: wait !important;
+      }
+      .loading:hover{
+        cursor: wait !important;
+      }
+      footer{
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        height: auto;
+        font-size: 10px;
+        background-color: #595959;
+      }
+      #pointer{
+        cursor: pointer;
+      }
+      .material-symbols-outlined {
+        margin: 0px 0px 0px 10px;
+        cursor: pointer;
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 700,
+        'GRAD' 0,
+        'opsz' 48
+      }
+    @media only screen and (min-width: 400px) {
+      body{
+        background-color: #595959;
+        padding: 20px 20px 40px 20px;
+      }
+      header{
+        margin: 0;
+      }
+      #title{
+        font-size: 30px;
+      }
+      #logo{
+        width: 400px;
+      }
+      #devtool-ui{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+      }
+      .sticky{
+        position: sticky;
+        top: 0;
+        z-index: 1;
+      }
+      #controls{
+        width: 100%;
+        height: auto;
+        background-color: #595959;
+        margin: 0px 0px 10px 0px;
+      }
+      button{
+        width: initial;
+      }
+      select{
+        margin: 0px 0px 20px 0px;
+      }
+      #dash{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100%;
+      }
+      fieldset{
+        margin: 5px;
+        width: 400px;
+        height: 200px;
+        overflow: scroll;
+      }
+      .flex-center{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+      }
+      legend{
+        font-size: 20px;
+        font-weight: bolder;
+      }
+      table{
+        table-layout: fixed;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-word;
+      }
+      th{
+        font-size: 15px;
+        font-weight: bold;
+        background-color: white;
+        color: #595959;
+      }
+      td{
+        font-size: 10px;
+        font-weight: normal;
+      }
+      th, td{
+        padding: 5px;
+        width: 500px;
+        height: auto;
+        text-align: center;
+      }
+      .td-key{
+        font-weight: bolder;
+      }
+      .td-data{
+        font-weight: initial;
+        font-style: italic;
+      }
+      .td-key.query,
+      .td-key.headers {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted white;
+      }
+      .td-data.query,
+      .td-data.headers {
+        display: none;
+        visibility: hidden;
+        width: 120px;
+        height: 100px;
+        opacity: 80%;
+        background-color: white;
+        color: #595959;
+        padding: 5px;
+        border-radius: 6px;
+        position: absolute;
+        z-index: 1;
+        overflow: scroll;
+        list-style-type: none;
+      }
+      .td-key.query:hover .td-data.query,
+      .td-key.headers:hover .td-data.headers {
+        display: inline-block;
+        visibility: visible;
+      }
+      .dark-row{
+        background-color: #333333;
+      }
+      .ok-row{
+        color: lightgreen;
+      }
+      .warn-row{
+        color: orange;
+      }
+      .err-row{
+        color: red;
+    }
+      #raw{
+        width: 90%;
+        height: 400px;
+        background-color: #333333;
+        font-family:'Courier New', Courier, monospace;
+        overflow: scroll;
+        border: 1px solid white;
+      }
+      footer{
+       background-color: #333333;
+      }
+    };
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <header>
+        <img src="img/nbcu-logo.png" id="logo" alt="NBCU Logo"/>
+        <h1 id="title"></h1>
+    </header>
+    <main></main>
+    <footer>
+      <p><span id="pointer"></span> | <span id="version"></span></p>
+    </footer>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
