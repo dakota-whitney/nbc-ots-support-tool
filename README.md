@@ -19,4 +19,4 @@ The OTS Support Tool is a _browser extension_ that assists NBCULocal OTS website
 * Extension is only enabled for NBCUniversal OTS Websites. Will disable itself if no OTS site detected.
 * Toolbar icon shows current status of the current page (ok, warn, err, disable)
 * Logs each raw network request JSON to the page's console for further analysis
-* Auto-update when bug fixes/new features are rolled out on the web store
+* Auto-update when bug fixes/new features are rolled out on the web store.
